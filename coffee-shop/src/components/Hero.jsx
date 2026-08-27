@@ -11,23 +11,27 @@ const Hero = () => {
         {/* text section */}
         <div className='space-y-5 px-4 md:px-0'>
             <motion.h3
-            nitial={{opacity: 0, x: -50}}
+            initial={{opacity: 0, x: -50}}
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 1, delay: 0.2}}             
             className='text-amber-900 font-semibold text-lg'>Welcome to King Cafe.......</motion.h3>
             <motion.h1
-            nitial={{opacity: 0, x: -60}}
+            initial={{opacity: 0, x: -60}}
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 1, delay: 0.4}}
             className='text-4xl md:text-6xl font-bold' style={{fontFamily: "'Lobster', cursive"}}>
               Experience Artisanal <span className='text-amber-900'>Coffee</span> at King Cafe
             </motion.h1>
             <motion.p 
-            nitial={{opacity: 0, x: -50}}
+            initial={{opacity: 0, x: -50}}
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 1, delay: 0.2}}
             >We take care of your taste, made from natural beans.</motion.p>
-            <div className='space-x-3'>
+            <div
+            initial={{opacity: 0, x: -50}}
+            whileInView={{opacity: 1, x: 0}}
+            transition={{duration: 1, delay: 0.2}}
+             className='space-x-3'>
                 <a href="#menu"><button className='bg-amber-900 text-white px-4 py-2 rounded-md hover:bg-amber-800 transition'>View Menu</button></a>
                 <a href="#about"><button className='bg-transparent border border-amber-900 text-amber-900 rounded-md px-4 py-2 hover:bg-amber-900 hover:text-white transition'>About Us</button></a>
             </div>
